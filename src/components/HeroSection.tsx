@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-brand-bg">
+    <section id="home" className="relative min-h-[100vh] lg:min-h-[85vh] flex items-center pt-28 pb-16 overflow-hidden bg-brand-bg">
       {/* Background Image full width */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -42,14 +42,14 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-[#EAEAEA]/95 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 xl:p-12 w-full lg:w-[55%] shadow-2xl relative z-10"
+            className="bg-[#EAEAEA]/95 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 w-full lg:w-[55%] shadow-2xl relative z-10"
           >
             <div className="flex flex-col gap-6">
               <span className="text-xs font-bold tracking-widest uppercase text-brand-text-muted">
                 Premium Stone Aggregates
               </span>
 
-              <h1 className="text-[40px] md:text-5xl lg:text-[56px] xl:text-[64px] font-bold tracking-tight leading-[1.05] text-brand-text">
+              <h1 className="text-[40px] md:text-5xl lg:text-[48px] xl:text-[56px] font-bold tracking-tight leading-[1.05] text-brand-text">
                 STRONGER <br />
                 FOUNDATIONS.<br />
                 <span className="text-[#888888]">BETTER TOMORROWS.</span>
@@ -83,7 +83,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-[#3a3a3a]/90 backdrop-blur-xl rounded-[24px] p-6 xl:p-8 w-full lg:w-[60%] lg:-ml-12 shadow-2xl z-20 mb-[-30px] lg:mb-4 xl:mb-8"
+            className="bg-[#3a3a3a]/90 backdrop-blur-xl rounded-[24px] p-6 lg:p-7 w-full lg:w-[60%] lg:-ml-12 shadow-2xl z-20 mb-[-20px] lg:mb-4"
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-4 divide-y sm:divide-y-0 sm:divide-x divide-white/20">
               <div className="flex flex-col items-center justify-center gap-2 px-2 pt-4 sm:pt-0 first:pt-0">
@@ -97,9 +97,9 @@ export default function HeroSection() {
               <div className="flex flex-col items-center justify-center gap-2 px-2 pt-4 sm:pt-0">
                 <div className="flex items-center gap-2 text-white">
                   <Gem className="w-6 h-6 text-white" strokeWidth={1.5} />
-                  <span className="text-2xl font-bold">2026</span>
+                  <span className="text-2xl font-bold">5M+</span>
                 </div>
-                <span className="text-[10px] font-medium text-white/70 text-center uppercase tracking-wider">Year<br />Established</span>
+                <span className="text-[10px] font-medium text-white/70 text-center uppercase tracking-wider">Tonnes<br />Delivered</span>
               </div>
 
               <div className="flex flex-col items-center justify-center gap-2 px-2 pt-4 sm:pt-0">
