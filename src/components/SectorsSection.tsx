@@ -1,39 +1,8 @@
 "use client";
 
 import Image from "next/image";
-
-const sectors = [
-  {
-    title: "RAILWAY INFRASTRUCTURE",
-    description: "Certified ballast for Indian Railways mainline and branch operations",
-    image: "/images/railway_infrastructure.png"
-  },
-  {
-    title: "NATIONAL HIGHWAYS",
-    description: "Base and sub-base aggregates for NH construction and maintenance",
-    image: "/images/national_highways.png"
-  },
-  {
-    title: "BUILDING CONSTRUCTION",
-    description: "Structural aggregates for foundations, columns, and floor systems",
-    image: "/images/building_construction.png"
-  },
-  {
-    title: "MINING OPERATIONS",
-    description: "Oversize material and support aggregates for open-cast mining sites",
-    image: "/images/mining_operations.png"
-  },
-  {
-    title: "PORTS & WATERWAYS",
-    description: "Riprap, armour stone, and marine-grade aggregates for coastal infrastructure",
-    image: "/images/ports_waterways.png"
-  },
-  {
-    title: "INDUSTRIAL ESTATES",
-    description: "Pavement and foundation materials for SEZs and industrial complexes",
-    image: "/images/industrial_estates.png"
-  }
-];
+import Link from "next/link";
+import { sectorsData } from "@/data/sectors";
 
 export default function SectorsSection() {
   return (
@@ -49,13 +18,14 @@ export default function SectorsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {sectors.map((sector, idx) => (
-            <div 
+          {sectorsData.map((sector, idx) => (
+            <Link 
+              href={`/sectors/${sector.slug}`}
               key={idx}
-              className="relative rounded-2xl overflow-hidden h-[300px] border border-white/10 group"
+              className="relative rounded-2xl overflow-hidden h-[300px] border border-white/10 group block"
             >
               <Image 
-                src={sector.image}
+                src={sector.heroImage}
                 alt={sector.title}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -74,10 +44,10 @@ export default function SectorsSection() {
                   className="text-white/90 text-sm leading-relaxed font-medium"
                   style={{ textShadow: "0 2px 5px rgba(0,0,0,0.9), 0 2px 10px rgba(0,0,0,0.8)" }}
                 >
-                  {sector.description}
+                  {sector.shortDescription}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
