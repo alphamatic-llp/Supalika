@@ -42,7 +42,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="bg-[#EAEAEA]/95 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 w-full lg:w-[55%] shadow-2xl relative z-10"
+            className="bg-[#EAEAEA]/95 backdrop-blur-xl rounded-[32px] p-8 lg:p-10 w-full lg:w-[45%] xl:w-[45%] lg:shrink-0 shadow-2xl relative z-10"
           >
             <div className="flex flex-col gap-6">
               <span className="text-xs font-bold tracking-widest uppercase text-brand-text-muted">
@@ -83,39 +83,39 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-[#3a3a3a]/90 backdrop-blur-xl rounded-[24px] p-6 lg:p-7 w-full lg:w-[60%] lg:-ml-12 shadow-2xl z-20 mb-[-20px] lg:mb-4"
+            className="bg-[#3a3a3a]/90 backdrop-blur-xl rounded-[24px] p-5 xl:p-6 w-full lg:w-[65%] xl:w-[60%] lg:shrink-0 lg:-ml-10 shadow-2xl z-20 mb-[-20px] lg:mb-4"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-4 divide-y sm:divide-y-0 sm:divide-x divide-white/20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-2 xl:gap-4 divide-y sm:divide-y-0 sm:divide-x divide-white/20">
               <div className="flex flex-col items-center justify-center gap-2 px-2 pt-4 sm:pt-0 first:pt-0">
-                <div className="flex items-center gap-2 text-white">
-                  <Factory className="w-6 h-6 text-white" strokeWidth={1.5} />
-                  <span className="text-2xl font-bold">250 TPH</span>
+                <div className="flex items-center gap-1.5 xl:gap-2 text-white">
+                  <Factory className="w-5 h-5 xl:w-6 xl:h-6 text-white" strokeWidth={1.5} />
+                  <span className="text-base lg:text-sm xl:text-lg font-bold whitespace-nowrap tracking-tight">Modern Plant</span>
                 </div>
-                <span className="text-[10px] font-medium text-white/70 text-center uppercase tracking-wider">Integrated Plant<br />Capacity</span>
+                <span className="text-[10px] font-medium text-white/70 text-center uppercase tracking-wider">Advanced Crushing<br />Technology</span>
               </div>
 
               <div className="flex flex-col items-center justify-center gap-2 px-2 pt-4 sm:pt-0">
-                <div className="flex items-center gap-2 text-white">
-                  <Gem className="w-6 h-6 text-white" strokeWidth={1.5} />
-                  <span className="text-2xl font-bold">5M+</span>
+                <div className="flex items-center gap-1.5 xl:gap-2 text-white">
+                  <Gem className="w-5 h-5 xl:w-6 xl:h-6 text-white" strokeWidth={1.5} />
+                  <span className="text-base lg:text-sm xl:text-lg font-bold whitespace-nowrap tracking-tight">High Grade</span>
                 </div>
-                <span className="text-[10px] font-medium text-white/70 text-center uppercase tracking-wider">Tonnes<br />Delivered</span>
+                <span className="text-[10px] font-medium text-white/70 text-center uppercase tracking-wider">Premium Stone<br />Quality</span>
               </div>
 
               <div className="flex flex-col items-center justify-center gap-2 px-2 pt-4 sm:pt-0">
-                <div className="flex items-center gap-2 text-white">
-                  <ShieldCheck className="w-6 h-6 text-white" strokeWidth={1.5} />
-                  <span className="text-2xl font-bold">Railway</span>
+                <div className="flex items-center gap-1.5 xl:gap-2 text-white">
+                  <ShieldCheck className="w-5 h-5 xl:w-6 xl:h-6 text-white" strokeWidth={1.5} />
+                  <span className="text-base lg:text-sm xl:text-lg font-bold whitespace-nowrap tracking-tight">Fast Delivery</span>
                 </div>
-                <span className="text-[10px] font-medium text-white/70 text-center uppercase tracking-wider">Standard Certified<br />Quality</span>
+                <span className="text-[10px] font-medium text-white/70 text-center uppercase tracking-wider">On-Time Logistics<br />Network</span>
               </div>
 
               <div className="flex flex-col items-center justify-center gap-2 px-2 pt-4 sm:pt-0">
-                <div className="flex items-center gap-2 text-white">
-                  <MapPin className="w-6 h-6 text-white" strokeWidth={1.5} />
-                  <span className="text-2xl font-bold">Eastern India</span>
+                <div className="flex items-center gap-1.5 xl:gap-2 text-white">
+                  <MapPin className="w-5 h-5 xl:w-6 xl:h-6 text-white" strokeWidth={1.5} />
+                  <span className="text-base lg:text-sm xl:text-lg font-bold whitespace-nowrap tracking-tight">Eco-Friendly</span>
                 </div>
-                <span className="text-[10px] font-medium text-white/70 text-center uppercase tracking-wider">Trusted Supplier<br />Network</span>
+                <span className="text-[10px] font-medium text-white/70 text-center uppercase tracking-wider">Sustainable Mining<br />Practices</span>
               </div>
             </div>
           </motion.div>

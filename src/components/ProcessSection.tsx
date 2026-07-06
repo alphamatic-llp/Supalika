@@ -1,66 +1,41 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { Mountain, Settings, Filter, Droplets, FlaskConical, Truck } from "lucide-react";
+import { 
+  ClipboardCheck, Mountain, Target, Zap, Hammer, 
+  Truck, Droplets, Leaf, Scale, ArrowDownToLine, 
+  Factory, Magnet, Box, ArrowRight, Settings2, 
+  Filter, CheckCircle, HardHat
+} from "lucide-react";
 
 const processes = [
-  {
-    id: 1,
-    title: "QUARRY EXTRACTION",
-    description: "Controlled blasting and excavation from certified mineral reserves",
-    icon: Mountain,
-  },
-  {
-    id: 2,
-    title: "PRIMARY CRUSHING",
-    description: "High-capacity jaw crushers reduce oversize material to feed grade",
-    icon: Settings,
-  },
-  {
-    id: 3,
-    title: "SECONDARY SCREENING",
-    description: "Vibrating screens separate material into precise size fractions",
-    icon: Filter,
-  },
-  {
-    id: 4,
-    title: "WASHING & GRADING",
-    description: "Water-wash systems remove dust and clay for clean output",
-    icon: Droplets,
-  },
-  {
-    id: 5,
-    title: "QUALITY TESTING",
-    description: "Laboratory analysis verifies gradation, shape index, and strength",
-    icon: FlaskConical,
-  },
-  {
-    id: 6,
-    title: "DISPATCH & LOGISTICS",
-    description: "Weigh-bridge verified loading with fleet tracking to site",
-    icon: Truck,
-  },
+  { id: "01", title: "Survey & Consent to Operate", icon: ClipboardCheck },
+  { id: "02", title: "Overburden Removal", icon: Mountain },
+  { id: "03", title: "Drilling", icon: Target },
+  { id: "04", title: "Blasting", icon: Zap },
+  { id: "05", title: "Breaking", description: "Excavator with Breaker", icon: Hammer },
+  { id: "06", title: "Loading of Boulders", icon: HardHat },
+  { id: "07", title: "Transport to Crusher Plant", icon: Truck },
+  { id: "08", title: "Dewatering & Misc. Activities", icon: Droplets },
+  { id: "09", title: "Environmental Controls", description: "Road Safety, Sprinklers, Tree Plantation, Biodiversity Management", icon: Leaf },
+  { id: "10", title: "Weighment at Weighbridge", icon: Scale },
+  { id: "11", title: "Unload at Hopper", description: "Jaw Crusher + Grizzly Feeder", icon: ArrowDownToLine },
+  { id: "12", title: "Primary Crushing & Scalping", description: "Quarry fines removed", icon: Factory },
+  { id: "13", title: "Removal of Iron/Ferrous Objects", icon: Magnet },
+  { id: "14", title: "Surge Hopper", icon: Box },
+  { id: "15", title: "Secondary Feeding", icon: ArrowRight },
+  { id: "16", title: "Cone Crusher", description: "Secondary Crushing", icon: Settings2 },
+  { id: "17", title: "Screening", icon: Filter },
+  { id: "18", title: "Final Products", icon: CheckCircle },
 ];
 
-// Animation variants
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15, // Faster stagger
-      delayChildren: 0.2,
-    }
-  }
-};
-
+// We won't use staggered container variants anymore because we want them to trigger independently on scroll
 const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 50, scale: 0.8 },
+  hidden: { opacity: 0, y: 50 },
   visible: { 
     opacity: 1, 
     y: 0, 
-    scale: 1,
-    transition: { type: "spring", stiffness: 100, damping: 15 }
+    transition: { type: "spring", stiffness: 70, damping: 15, duration: 0.6 }
   }
 };
 
@@ -79,77 +54,79 @@ export default function ProcessSection() {
             <div className="w-8 h-[2px] bg-amber-500" />
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brand-text uppercase mb-6">
-            From Earth To Excellence
+            Our Complete Process
           </h2>
           <p className="text-brand-text-muted text-lg max-w-2xl">
-            Our end-to-end production process
+            From extraction to the final product, every step is optimized for quality and efficiency.
           </p>
         </div>
 
-        {/* Process Timeline */}
-        <div className="relative mt-24 pb-12">
+        {/* Vertical Timeline */}
+        <div className="max-w-4xl mx-auto relative">
           
-          {/* Animated Horizontal Line (Desktop) */}
-          <div className="hidden lg:block absolute top-[52px] left-0 w-full h-[2px] bg-brand-border z-0">
-            <motion.div 
-              initial={{ width: "0%" }}
-              whileInView={{ width: "100%" }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.9, ease: "linear", delay: 0.2 }}
-              className="absolute top-0 left-0 h-full bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]"
-            />
-          </div>
+          {/* Center Vertical Line */}
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-[2px] bg-brand-border -translate-x-1/2 z-0" />
 
-          <motion.div 
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-4 relative z-10"
-          >
-            {processes.map((process, idx) => (
-              <motion.div 
-                key={process.id} 
-                variants={itemVariants}
-                className="flex flex-col items-center text-center relative group"
-              >
-                {/* Hexagon Wrapper */}
-                <div className="relative w-28 h-28 mb-8 flex justify-center items-center">
+          <div className="flex flex-col gap-8 md:gap-4 relative z-10">
+            {processes.map((process, index) => {
+              const isEven = index % 2 === 0;
+              return (
+                <motion.div 
+                  key={process.id} 
+                  variants={itemVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: "-10%" }}
+                  className={`flex items-center w-full ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} flex-row group py-4`}
+                >
                   
-                  {/* Hexagon SVG Background */}
-                  <svg 
-                    viewBox="0 0 100 100" 
-                    className="absolute inset-0 w-full h-full text-brand-bg-alt drop-shadow-sm"
-                  >
-                    <polygon 
-                      points="50 0, 93.3 25, 93.3 75, 50 100, 6.7 75, 6.7 25" 
-                      fill="currentColor" 
-                      stroke="rgba(245, 158, 11, 0.4)" 
-                      strokeWidth="2"
-                      className="group-hover:stroke-amber-500 transition-colors duration-500"
-                    />
-                  </svg>
-
-                  {/* Icon */}
-                  <process.icon className="w-10 h-10 text-amber-500 relative z-10 transform group-hover:scale-110 transition-transform duration-500" strokeWidth={1.5} />
-                  
-                  {/* Number Badge */}
-                  <div className="absolute -top-1 -right-1 w-7 h-7 bg-amber-500 text-white font-bold rounded-full flex items-center justify-center text-sm z-20 shadow-lg border-2 border-brand-bg">
-                    {process.id}
+                  {/* Left Side Content (Empty for Odd on Desktop) */}
+                  <div className={`hidden md:block w-1/2 ${isEven ? 'pr-12 text-right' : 'pl-12 text-left'}`}>
+                    {isEven && (
+                      <div>
+                        <h3 className="text-xl font-bold text-brand-text uppercase tracking-wide">{process.title}</h3>
+                        {process.description && (
+                          <p className="text-brand-text-muted mt-2 text-sm">{process.description}</p>
+                        )}
+                      </div>
+                    )}
+                    {!isEven && (
+                      <div>
+                        <h3 className="text-xl font-bold text-brand-text uppercase tracking-wide">{process.title}</h3>
+                        {process.description && (
+                          <p className="text-brand-text-muted mt-2 text-sm">{process.description}</p>
+                        )}
+                      </div>
+                    )}
                   </div>
-                </div>
 
-                {/* Text Content */}
-                <h3 className="text-brand-text font-bold text-sm tracking-wide uppercase mb-3 px-2">
-                  {process.title}
-                </h3>
-                <p className="text-brand-text-muted text-xs leading-relaxed px-2">
-                  {process.description}
-                </p>
-                
-              </motion.div>
-            ))}
-          </motion.div>
+                  {/* Center Icon */}
+                  <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-12 h-12 bg-brand-bg border-2 border-amber-500 rounded-full flex items-center justify-center z-10 shadow-[0_0_15px_rgba(245,158,11,0.2)] group-hover:scale-110 group-hover:bg-amber-500 transition-all duration-300">
+                    <process.icon className="w-5 h-5 text-amber-500 group-hover:text-white transition-colors" strokeWidth={2} />
+                  </div>
+
+                  {/* Right Side Content / Mobile Content */}
+                  <div className={`w-full md:w-1/2 pl-20 md:pl-0 ${isEven ? 'md:pl-12 md:hidden' : 'md:hidden'}`}>
+                     <div>
+                        <span className="text-amber-500 font-bold text-xs mb-1 block">STEP {process.id}</span>
+                        <h3 className="text-lg font-bold text-brand-text uppercase tracking-wide">{process.title}</h3>
+                        {process.description && (
+                          <p className="text-brand-text-muted mt-1 text-sm">{process.description}</p>
+                        )}
+                      </div>
+                  </div>
+
+                  {/* Desktop Step Number */}
+                  <div className={`hidden md:flex w-1/2 ${isEven ? 'pl-12 justify-start' : 'pr-12 justify-end'} items-center`}>
+                     <span className="text-brand-text-muted/30 font-black text-5xl italic group-hover:text-amber-500/20 transition-colors">
+                        {process.id}
+                     </span>
+                  </div>
+
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
 
       </div>
