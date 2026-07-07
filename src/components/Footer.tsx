@@ -62,16 +62,30 @@ export default function Footer() {
           {/* Contact */}
           <div className="flex flex-col gap-4">
             <h4 className="font-bold text-sm tracking-widest uppercase mb-2">Contact Us</h4>
-            <p className="text-sm text-brand-text-muted">
-              Khandagiri, Bhubaneswar,<br />
-              Odisha - 751030
-            </p>
-            <p className="text-sm text-brand-text-muted mt-2">
-              +91 98765 43210
-            </p>
-            <p className="text-sm text-brand-text-muted">
-              info@supalikastone.com
-            </p>
+            
+            <div className="flex flex-col gap-1">
+              <span className="text-xs font-bold text-brand-text">Registered Office:</span>
+              <p className="text-xs text-brand-text-muted leading-tight">Premises No- 51/2072, Bandhabahal, Tahsil-Lakhanpur, Jharsuguda, Odisha-768211</p>
+            </div>
+
+            <div className="flex flex-col gap-1">
+              <span className="text-xs font-bold text-brand-text">Corporate Office:</span>
+              <p className="text-xs text-brand-text-muted leading-tight">Room 2C, Bajaj Kunj, 118-Bangur Avenue, Block-C, Kolkata-700055</p>
+            </div>
+
+            <div className="flex flex-col gap-1">
+              <span className="text-xs font-bold text-brand-text">Production Unit:</span>
+              <p className="text-xs text-brand-text-muted leading-tight">Chichinda, Kechobahal, Dis-Jharuguda, Odisha-768216</p>
+            </div>
+
+            <div className="mt-2">
+              <p className="text-sm text-brand-text-muted">
+                +91 98042 70501
+              </p>
+              <p className="text-sm text-brand-text-muted">
+                info@supalikastone.com
+              </p>
+            </div>
           </div>
         </div>
 

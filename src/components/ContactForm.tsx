@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Building, Briefcase, Factory } from "lucide-react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -40,14 +40,35 @@ export default function ContactForm() {
               Whether you need a quote for a large infrastructure project or have questions about our stone aggregates, our team is ready to assist you.
             </p>
             
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-6">
+              
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-brand-bg-alt flex items-center justify-center shrink-0 border border-brand-border">
-                  <MapPin className="w-5 h-5 text-brand-text" />
+                  <Building className="w-5 h-5 text-brand-text" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-brand-text mb-1">Our Location</h4>
-                  <p className="text-sm text-brand-text-muted">Plot 123, Industrial Estate<br/>Bhubaneswar, Odisha, India</p>
+                  <h4 className="font-bold text-brand-text mb-1">Registered Office</h4>
+                  <p className="text-sm text-brand-text-muted">Premises No- 51/2072, Bandhabahal,<br/>Tahsil-Lakhanpur, Jharsuguda, Odisha-768211</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-brand-bg-alt flex items-center justify-center shrink-0 border border-brand-border">
+                  <Briefcase className="w-5 h-5 text-brand-text" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-brand-text mb-1">Corporate Office</h4>
+                  <p className="text-sm text-brand-text-muted">Room 2C, Bajaj Kunj, 118-Bangur Avenue,<br/>Block-C, Kolkata-700055</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-brand-bg-alt flex items-center justify-center shrink-0 border border-brand-border">
+                  <Factory className="w-5 h-5 text-brand-text" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-brand-text mb-1">Production Unit</h4>
+                  <p className="text-sm text-brand-text-muted">Chichinda, Kechobahal,<br/>Dis-Jharuguda, Odisha-768216</p>
                 </div>
               </div>
               
@@ -57,7 +78,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-bold text-brand-text mb-1">Phone</h4>
-                  <p className="text-sm text-brand-text-muted">+91 9804270501<br/>+91 98765 43211</p>
+                  <p className="text-sm text-brand-text-muted">+91 98042 70501<br/>+91 98765 43211</p>
                 </div>
               </div>
               
@@ -67,7 +88,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-bold text-brand-text mb-1">Email</h4>
-                  <p className="text-sm text-brand-text-muted">contact@supalika.com<br/>sales@supalika.com</p>
+                  <p className="text-sm text-brand-text-muted">contact@supalikastone.com<br/>sales@supalikastone.com</p>
                 </div>
               </div>
             </div>
