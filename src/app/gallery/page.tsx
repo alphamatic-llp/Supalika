@@ -1,5 +1,5 @@
 import PageHeader from "@/components/PageHeader";
-import ClientGallery from "./ClientGallery";
+import GallerySection from "@/components/GallerySection";
 
 export const metadata = {
   title: "Gallery | Supalika Stone Works",
@@ -14,9 +14,7 @@ export default function GalleryPage() {
         subtitle="Work In Action" 
         backgroundImage="/images/hero-bg.png" 
       />
-      <div className="py-24 bg-brand-bg-alt min-h-screen">
-        <ClientGallery />
-      </div>
+      <GallerySection />
     </>
   );
 }

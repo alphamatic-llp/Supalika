@@ -6,23 +6,23 @@ import { Shield, Clock, Tag, Leaf } from "lucide-react";
 const features = [
   {
     icon: Shield,
-    title: "Premium Quality",
-    description: "Best materials for strong construction",
-  },
-  {
-    icon: Clock,
-    title: "Timely Delivery",
-    description: "On-time delivery, every time",
+    title: "Premium Quality Products",
+    description: "Strictly graded aggregates",
   },
   {
     icon: Tag,
-    title: "Competitive Pricing",
-    description: "Best prices without compromising quality",
+    title: "Modern Crushing Plant",
+    description: "State-of-the-art infrastructure",
+  },
+  {
+    icon: Clock,
+    title: "Bulk Dispatch Capability",
+    description: "High volume output capacity",
   },
   {
     icon: Leaf,
-    title: "Sustainable Practices",
-    description: "Environment conscious mining practices",
+    title: "Industry Applications",
+    description: "Serving all major sectors",
   },
 ];
 

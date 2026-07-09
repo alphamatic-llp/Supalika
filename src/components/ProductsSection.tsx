@@ -29,54 +29,64 @@ export default function ProductsSection() {
           </Link>
         </div>
 
-        <div className="relative w-full overflow-hidden flex items-center mt-12 py-4">
-          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-brand-bg to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-brand-bg to-transparent z-10" />
-          
-          <motion.div
-            animate={{ x: [0, "-50%"] }}
-            transition={{ repeat: Infinity, ease: "linear", duration: 30 }}
-            className="flex gap-4 w-max"
-          >
-            {[...products, ...products, ...products].map((product, idx) => (
-              <div
-                key={`${product.id}-${idx}`}
-                className="relative rounded-xl overflow-hidden shadow-sm group w-[280px] md:w-[320px] h-[360px] flex-shrink-0"
-              >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12">
+          {products.slice(0, 6).map((product, idx) => (
+            <motion.div
+              key={product.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-border/30 group flex flex-col"
+            >
+              <div className="relative h-64 w-full overflow-hidden">
                 <Image
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                {/* Dark Gradient Overlay for text readability */}
-                <div className="absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                {/* Content */}
-                <div className="absolute inset-0 p-6 flex flex-col justify-between z-10">
-                  {/* Tag */}
-                  <div className="self-start px-3 py-1 bg-amber-500 text-[#0a0f16] text-[10px] font-bold rounded-full tracking-wider">
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-amber-500 text-black text-[10px] font-bold rounded-full tracking-wider uppercase shadow-md">
                     {product.tag}
-                  </div>
-                  
-                  {/* Text */}
-                  <div className="flex flex-col">
-                    <h3 className="font-black text-xl text-white mb-3 tracking-tight group-hover:text-amber-500 transition-colors">
-                      {product.name}
-                    </h3>
-                    <p className="text-xs text-white/70 line-clamp-4 leading-relaxed">
-                      {product.description}
-                    </p>
-                  </div>
+                  </span>
+                </div>
+              </div>
+              
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="font-bold text-xl text-brand-text mb-2">
+                  {product.name}
+                </h3>
+                <p className="text-sm text-brand-text-muted mb-4 line-clamp-2">
+                  {product.description}
+                </p>
+                <div className="mb-6 flex flex-wrap gap-2">
+                  {product.applications.slice(0, 2).map((app, i) => (
+                    <span key={i} className="text-xs bg-brand-bg px-2 py-1 rounded text-brand-text-muted font-medium border border-brand-border/50">
+                      {app}
+                    </span>
+                  ))}
                 </div>
                 
-                {/* Link overlay */}
-                <Link href={`/products/${product.slug}`} className="absolute inset-0 z-20">
-                  <span className="sr-only">View {product.name}</span>
-                </Link>
+                <div className="mt-auto flex items-center gap-3 pt-4 border-t border-brand-border/30">
+                  <Link
+                    href={`/products/${product.slug}`}
+                    className="flex-1 text-center bg-brand-bg-alt hover:bg-gray-200 text-brand-text px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors"
+                  >
+                    View Details
+                  </Link>
+                  <a
+                    href={`https://wa.me/919804270501?text=I%20am%20interested%20in%20${product.name}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 text-center bg-brand-text hover:bg-black text-white px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors"
+                  >
+                    Request Quote
+                  </a>
+                </div>
               </div>
-            ))}
-          </motion.div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import ProcessSection from "@/components/ProcessSection";
 import Image from "next/image";
 import { ShieldCheck, Target, Factory, FlaskConical, Leaf, CheckCircle2, ClipboardCheck, Mountain, Zap, Hammer, Truck, Droplets, Scale, ArrowDownToLine, Magnet, Box, ArrowRight, Settings2, Filter, CheckCircle, HardHat } from "lucide-react";
 
@@ -66,6 +67,11 @@ export default function QualityPage() {
       />
       
       <div className="bg-brand-bg pb-24">
+        
+        {/* Short 6-step flow from Homepage */}
+        <div className="pt-12">
+          <ProcessSection />
+        </div>
         
         {/* Split Section: Our Commitment */}
         <section className="py-24 px-4 md:px-8">

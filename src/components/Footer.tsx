@@ -40,12 +40,14 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="flex flex-col gap-4">
             <h4 className="font-bold text-sm tracking-widest uppercase mb-2">Quick Links</h4>
-            <Link href="#home" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Home</Link>
-            <Link href="#about" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">About Us</Link>
-            <Link href="#products" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Products</Link>
-            <Link href="#gallery" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Gallery</Link>
-            <Link href="#quality" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Quality</Link>
-            <Link href="#contact" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Contact Us</Link>
+            <Link href="/" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Home</Link>
+            <Link href="/about" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">About Us</Link>
+            <Link href="/products" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Products</Link>
+            <Link href="/industries" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Industries</Link>
+            <Link href="/quality" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Quality Assurance</Link>
+            <Link href="/infrastructure" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Infrastructure</Link>
+            <Link href="/gallery" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Gallery</Link>
+            <Link href="/contact" className="text-sm text-brand-text-muted hover:text-brand-text transition-colors">Contact Us</Link>
           </div>
 
           {/* Products */}
@@ -79,12 +81,27 @@ export default function Footer() {
             </div>
 
             <div className="mt-2">
-              <p className="text-sm text-brand-text-muted">
+              <p className="text-sm text-brand-text-muted font-medium">
                 +91 98042 70501
               </p>
               <p className="text-sm text-brand-text-muted">
                 info@supalikastone.com
               </p>
+            </div>
+
+            {/* Newsletter */}
+            <div className="mt-4">
+              <h4 className="font-bold text-xs tracking-widest uppercase mb-2">Newsletter</h4>
+              <div className="flex w-full">
+                <input 
+                  type="email" 
+                  placeholder="Enter email address" 
+                  className="bg-white border border-brand-border px-3 py-2 text-sm rounded-l-lg w-full focus:outline-none focus:border-amber-500 transition-colors"
+                />
+                <button className="bg-brand-text text-white px-3 py-2 text-sm rounded-r-lg hover:bg-brand-btn transition-colors font-medium">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -108,7 +125,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="flex items-center justify-between w-full bg-white text-brand-text px-4 py-3 rounded-xl text-sm font-bold transition-all hover:bg-gray-100"
             >
-              Get A Quote
+              Request Quote
               <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>

@@ -6,33 +6,33 @@ import { ShieldCheck, Settings, FileCheck, Truck, Award, MapPin } from "lucide-r
 const advantages = [
   {
     icon: ShieldCheck,
-    title: "Certified Quality Standards",
-    description: "Every tonne tested against Indian Railway ballast specifications and National Highway aggregate standards — zero compromise on compliance.",
+    title: "Certified Quality",
+    description: "Strict quality control and testing against national engineering standards.",
   },
   {
     icon: Settings,
-    title: "High-Volume Throughput",
-    description: "250 TPH integrated crushing capacity operating round-the-clock to meet the most demanding project timelines and volume requirements.",
-  },
-  {
-    icon: FileCheck,
-    title: "Compliance First",
-    description: "Materials verified against IS codes, railway circulars, and MORTH specifications — with full test certificates for every consignment dispatched.",
+    title: "Modern Crushing Technology",
+    description: "State-of-the-art machinery ensuring perfect aggregate shape and size.",
   },
   {
     icon: Truck,
-    title: "Reliable On-Time Delivery",
-    description: "Regional logistics network with GPS-tracked fleet ensures consistent supply to project sites across Odisha and Eastern India.",
+    title: "Reliable Delivery",
+    description: "Efficient logistics network guaranteeing on-time dispatch and delivery.",
   },
   {
     icon: Award,
-    title: "Expert Leadership",
-    description: "Modern domain expertise in quarrying, aggregate production, and infrastructure material supply, setting new standards for the industry.",
+    title: "Professional Team",
+    description: "Led by industry experts with deep domain knowledge in quarrying.",
   },
   {
     icon: MapPin,
-    title: "Eastern India Coverage",
-    description: "Strategically located in Odisha with pan-Eastern supply capability — serving projects from Bihar to Andhra Pradesh.",
+    title: "Bulk Supply Capacity",
+    description: "High-volume throughput to meet the demands of mega infrastructure projects.",
+  },
+  {
+    icon: FileCheck,
+    title: "Customer Satisfaction",
+    description: "Dedicated support and transparent communication for long-term partnerships.",
   },
 ];
 

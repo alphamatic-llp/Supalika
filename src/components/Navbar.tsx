@@ -11,9 +11,11 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Products", href: "/products" },
-  { name: "Gallery", href: "/gallery" },
+  { name: "Industries", href: "/industries" },
   { name: "Quality", href: "/quality" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "Infrastructure", href: "/infrastructure" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -82,7 +84,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-brand-btn hover:bg-brand-btn-hover text-white px-5 py-2.5 rounded-[16px] text-sm font-medium transition-all shadow-md"
           >
-            Get A Quote
+            Request Quote
             <ArrowUpRight className="w-4 h-4" />
           </a>
         </div>
@@ -125,7 +127,7 @@ export default function Navbar() {
               className="flex items-center gap-2 bg-brand-btn text-white px-6 py-3 rounded-2xl text-base font-medium w-full justify-center mt-4"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Get A Quote
+              Request Quote
               <ArrowUpRight className="w-5 h-5" />
             </a>
           </motion.div>

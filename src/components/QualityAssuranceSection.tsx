@@ -5,20 +5,20 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const checklist = [
-  "Premium Aggregates",
-  "Modern Machinery",
-  "Reliable Supply",
-  "Quality Assurance",
-  "Customer First",
-  "Competitive Pricing"
+const qualityPoints = [
+  "Quality Testing",
+  "Material Inspection",
+  "Dust Control",
+  "Grading Accuracy",
+  "Industry Standard Processes",
+  "Safety Compliance"
 ];
 
-export default function AboutSection() {
+export default function QualityAssuranceSection() {
   return (
-    <section id="about" className="py-20 px-4 md:px-8">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+    <section className="py-24 bg-white relative overflow-hidden">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           
           {/* Left: Image */}
           <motion.div
@@ -26,17 +26,17 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative h-[500px] md:h-[600px] rounded-[40px] overflow-hidden flex flex-col justify-end p-8 shadow-2xl"
+            className="relative h-[450px] md:h-[600px] rounded-[32px] overflow-hidden shadow-2xl"
           >
             <Image
-              src="/images/quality_inspection.png"
-              alt="Quarry Operations and Crushing Plant"
+              src="/images/quality_lab.png"
+              alt="Quality Assurance and Testing"
               fill
               className="object-cover"
             />
           </motion.div>
 
-          {/* Right: Content & Checklist */}
+          {/* Right: Content */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -47,20 +47,20 @@ export default function AboutSection() {
             <div className="flex items-center gap-4 mb-4">
               <div className="w-8 h-[2px] bg-amber-500" />
               <span className="text-amber-500 font-bold tracking-[0.2em] uppercase text-sm">
-                About Supalika Stone
+                Uncompromising Standards
               </span>
             </div>
             
             <h2 className="text-3xl md:text-5xl font-bold text-brand-text uppercase tracking-tight mb-6 leading-[1.1]">
-              Building Strong Foundations with Premium Stone Aggregates
+              Quality Assurance at Every Step
             </h2>
             
             <p className="text-brand-text-muted text-lg mb-8 leading-relaxed">
-              We are a professional aggregate manufacturing company dedicated to delivering premium quality materials across Eastern India. With integrated crushing systems, reliable logistics, and a commitment to sustainable operations, we serve the nation's most demanding infrastructure projects.
+              Our state-of-the-art testing laboratories ensure that every aggregate produced meets the strictest national and international engineering standards. From extraction to final dispatch, quality is our foremost priority.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mb-10">
-              {checklist.map((item, idx) => (
+              {qualityPoints.map((item, idx) => (
                 <div key={idx} className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 text-amber-500 shrink-0" strokeWidth={2.5} />
                   <span className="font-semibold text-brand-text">{item}</span>
@@ -69,10 +69,10 @@ export default function AboutSection() {
             </div>
             
             <Link
-              href="/about"
+              href="/quality"
               className="flex items-center gap-2 bg-brand-text hover:bg-black text-white px-8 py-4 rounded-[16px] text-sm font-semibold transition-all w-fit shadow-lg"
             >
-              Learn More
+              View Quality Standards
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>
