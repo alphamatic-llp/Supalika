@@ -38,7 +38,7 @@ const trustFactors = [
 
 export default function TrustSection() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         
         {/* Header */}
@@ -50,7 +50,7 @@ export default function TrustSection() {
             </span>
             <div className="w-8 h-[2px] bg-amber-500" />
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-brand-text uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-text uppercase">
             Why Clients Trust Us
           </h2>
         </div>
@@ -64,7 +64,7 @@ export default function TrustSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-brand-bg rounded-[24px] p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-brand-border/40 group"
+              className="bg-brand-bg rounded-2xl p-8 shadow-sm hover:shadow-xl transition-shadow duration-300 border border-brand-border/40 group"
             >
               <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
                 <factor.icon className="w-6 h-6 text-amber-500" strokeWidth={2} />

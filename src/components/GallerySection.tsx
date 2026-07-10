@@ -6,18 +6,18 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const galleryImages = [
-  { id: 1, src: "https://loremflickr.com/800/600/factory,plant/all", alt: "Crusher Plant", span: "md:col-span-2 md:row-span-2" },
-  { id: 2, src: "https://loremflickr.com/800/600/quarry,stone/all", alt: "Stone Yard", span: "md:col-span-1 md:row-span-1" },
-  { id: 3, src: "https://loremflickr.com/800/600/mining,excavator/all", alt: "Mining Area", span: "md:col-span-1 md:row-span-2" },
-  { id: 4, src: "https://loremflickr.com/800/600/loader,truck/all", alt: "Loading", span: "md:col-span-1 md:row-span-1" },
-  { id: 5, src: "https://loremflickr.com/800/600/truck,dispatch/all", alt: "Dispatch", span: "md:col-span-1 md:row-span-1" },
-  { id: 6, src: "https://loremflickr.com/800/600/heavy,machinery/all", alt: "Heavy Machinery", span: "md:col-span-2 md:row-span-1" },
-  { id: 7, src: "https://loremflickr.com/800/600/industrial,operations/all", alt: "Operations", span: "md:col-span-1 md:row-span-1" },
+  { id: 1, src: "/images/gallery/crusher_plant.png", alt: "Crusher Plant", span: "md:col-span-2 md:row-span-2" },
+  { id: 2, src: "/images/gallery/stone_yard.png", alt: "Stone Yard", span: "md:col-span-1 md:row-span-1" },
+  { id: 3, src: "/images/gallery/mining_area.png", alt: "Mining Area", span: "md:col-span-1 md:row-span-2" },
+  { id: 4, src: "/images/gallery/loading_area.png", alt: "Loading", span: "md:col-span-1 md:row-span-1" },
+  { id: 5, src: "/images/gallery/dispatch_area.png", alt: "Dispatch", span: "md:col-span-1 md:row-span-1" },
+  { id: 6, src: "/images/gallery/heavy_machinery.png", alt: "Heavy Machinery", span: "md:col-span-2 md:row-span-1" },
+  { id: 7, src: "/images/gallery/operations_manager.png", alt: "Operations", span: "md:col-span-1 md:row-span-1" },
 ];
 
 export default function GallerySection() {
   return (
-    <section id="gallery" className="py-24 bg-brand-bg-alt overflow-hidden">
+    <section id="gallery" className="py-20 bg-brand-bg-alt overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
         
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
@@ -28,13 +28,13 @@ export default function GallerySection() {
                 Project Gallery
               </span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-brand-text uppercase">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-text uppercase">
               Operations in Action
             </h2>
           </div>
           <Link
             href="/gallery"
-            className="flex items-center gap-2 bg-brand-bg hover:bg-brand-border/30 text-brand-text px-6 py-3 rounded-[16px] text-sm font-semibold transition-all border border-brand-border/30 self-start md:self-auto shadow-sm"
+            className="flex items-center gap-2 bg-brand-bg hover:bg-brand-border/30 text-brand-text px-6 py-3 rounded-xl text-sm font-semibold transition-all border border-brand-border/30 self-start md:self-auto shadow-sm"
           >
             View Full Gallery
             <ArrowRight className="w-4 h-4" />
@@ -50,7 +50,7 @@ export default function GallerySection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className={`relative rounded-[24px] overflow-hidden group shadow-md ${image.span}`}
+              className={`relative rounded-2xl overflow-hidden group shadow-md ${image.span}`}
             >
               <Image
                 src={image.src}

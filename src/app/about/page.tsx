@@ -1,9 +1,7 @@
 import PageHeader from "@/components/PageHeader";
 import AboutSection from "@/components/AboutSection";
-import MachinerySection from "@/components/MachinerySection";
-import QualityAssuranceSection from "@/components/QualityAssuranceSection";
-import GallerySection from "@/components/GallerySection";
-import CTASection from "@/components/CTASection";
+import DirectorsSection from "@/components/DirectorsSection";
+import EnvironmentalSection from "@/components/EnvironmentalSection";
 import Image from "next/image";
 import { Target, Lightbulb, Shield, CheckCircle2 } from "lucide-react";
 
@@ -30,6 +28,9 @@ export default function AboutPage() {
         backgroundImage="/images/hero-bg2.png" 
       />
       
+      {/* Leadership */}
+      <DirectorsSection />
+
       {/* Company Introduction */}
       <div className="pt-12 pb-12 bg-brand-bg">
         <AboutSection />
@@ -86,17 +87,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Infrastructure / Manufacturing Excellence */}
-      <MachinerySection />
-
-      {/* Quality Commitment */}
-      <QualityAssuranceSection />
-
-      {/* Gallery */}
-      <GallerySection />
-
-      {/* Call to Action */}
-      <CTASection />
+      {/* Environmental & ESG */}
+      <EnvironmentalSection />
     </>
   );
 }

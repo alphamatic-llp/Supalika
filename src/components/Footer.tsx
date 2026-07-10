@@ -89,41 +89,30 @@ export default function Footer() {
               </p>
             </div>
 
-            {/* Newsletter */}
-            <div className="mt-4">
-              <h4 className="font-bold text-xs tracking-widest uppercase mb-2">Newsletter</h4>
-              <div className="flex w-full">
-                <input 
-                  type="email" 
-                  placeholder="Enter email address" 
-                  className="bg-white border border-brand-border px-3 py-2 text-sm rounded-l-lg w-full focus:outline-none focus:border-amber-500 transition-colors"
-                />
-                <button className="bg-brand-text text-white px-3 py-2 text-sm rounded-r-lg hover:bg-brand-btn transition-colors font-medium">
-                  Subscribe
-                </button>
-              </div>
-            </div>
+
           </div>
         </div>
 
         {/* Bottom Bar with CTA */}
-        <div className="flex flex-col md:flex-row items-center justify-between border-t border-brand-border/50 pt-8 mt-12 gap-6 relative">
+        <div className="flex flex-col lg:flex-row items-center justify-between border-t border-brand-border/50 pt-8 mt-12 gap-6">
           
-          <div className="text-xs text-brand-text-muted order-2 md:order-1">
+          <div className="text-xs text-brand-text-muted order-2 lg:order-1">
             © 2026 Supalika Stone Works. All Rights Reserved.
           </div>
           
-          {/* Footer CTA Card */}
-          <div className="md:absolute right-0 bottom-4 bg-[#5b5b5b] text-white p-6 rounded-2xl w-full md:w-80 shadow-2xl order-1 md:order-2">
-            <h3 className="font-bold text-lg mb-2">NEED A QUOTE?</h3>
-            <p className="text-sm text-white/80 mb-6">
-              Get the best price for your requirement.
-            </p>
+          {/* Footer CTA Horizontal Banner */}
+          <div className="bg-brand-text text-white p-5 rounded-2xl w-full lg:w-auto shadow-xl order-1 lg:order-2 flex flex-col sm:flex-row items-center justify-between gap-4 lg:gap-8 border border-white/10">
+            <div className="text-center sm:text-left">
+              <h3 className="font-bold text-base tracking-wide">NEED A QUOTE?</h3>
+              <p className="text-xs text-white/70 mt-0.5">
+                Get the best price for your requirement.
+              </p>
+            </div>
             <a
               href="https://wa.me/919804270501?text=I%20want%20to%20know%20more%20about%20your%20product%20and%20want%20an%20quotation"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between w-full bg-white text-brand-text px-4 py-3 rounded-xl text-sm font-bold transition-all hover:bg-gray-100"
+              className="flex items-center justify-center gap-2 w-full sm:w-auto bg-amber-500 text-black px-5 py-2.5 rounded-xl text-sm font-bold transition-all hover:bg-amber-600 shrink-0"
             >
               Request Quote
               <ArrowUpRight className="w-4 h-4" />
@@ -131,9 +120,9 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-4 text-xs text-brand-text-muted order-3">
-            <Link href="#" className="hover:text-brand-text transition-colors">Privacy Policy</Link>
+            <Link href="/privacy-policy" className="hover:text-brand-text transition-colors">Privacy Policy</Link>
             <span>|</span>
-            <Link href="#" className="hover:text-brand-text transition-colors">Terms & Conditions</Link>
+            <Link href="/terms-conditions" className="hover:text-brand-text transition-colors">Terms & Conditions</Link>
           </div>
         </div>
       </div>

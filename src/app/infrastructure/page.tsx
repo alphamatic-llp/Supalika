@@ -1,7 +1,7 @@
 import PageHeader from "@/components/PageHeader";
 import MachinerySection from "@/components/MachinerySection";
 import Image from "next/image";
-import { Hammer, Truck, Factory, ShieldCheck, Leaf } from "lucide-react";
+import { Hammer, Truck, Factory, ShieldCheck, Leaf, CheckCircle2 } from "lucide-react";
 import CTASection from "@/components/CTASection";
 
 export const metadata = {
@@ -45,7 +45,7 @@ export default function InfrastructurePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="relative h-[400px] md:h-[500px] rounded-[40px] overflow-hidden shadow-2xl">
                 <Image 
-                  src="https://loremflickr.com/800/600/mining,quarry/all"
+                  src="/images/infra_quarry.png"
                   alt="Quarry Operations"
                   fill
                   className="object-cover"
@@ -85,7 +85,7 @@ export default function InfrastructurePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center flex-col-reverse lg:flex-row-reverse">
               <div className="relative h-[400px] md:h-[500px] rounded-[40px] overflow-hidden shadow-2xl">
                 <Image 
-                  src="https://loremflickr.com/800/600/crusher,plant/all"
+                  src="/images/infra_plant.png"
                   alt="Crushing Plant"
                   fill
                   className="object-cover"
@@ -162,7 +162,7 @@ export default function InfrastructurePage() {
               
               <div className="relative h-[300px] md:h-[400px] rounded-[32px] overflow-hidden border border-white/20">
                 <Image 
-                  src="https://loremflickr.com/800/600/weighbridge,truck/all"
+                  src="/images/infra_logistics.png"
                   alt="Weighbridge and Logistics"
                   fill
                   className="object-cover"

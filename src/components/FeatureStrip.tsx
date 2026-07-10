@@ -35,7 +35,7 @@ export default function FeatureStrip() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="glass-card rounded-[24px] p-6 shadow-xl border border-white/40"
+          className="glass-card rounded-2xl p-6 shadow-xl border border-white/40"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 divide-y md:divide-y-0 md:divide-x divide-brand-border/30">
             {features.map((feature, idx) => (

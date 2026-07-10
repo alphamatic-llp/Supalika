@@ -38,7 +38,7 @@ const advantages = [
 
 export default function AdvantageSection() {
   return (
-    <section className="py-24 bg-brand-bg relative overflow-hidden">
+    <section className="py-20 bg-brand-bg relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         
         {/* Header */}
@@ -50,7 +50,7 @@ export default function AdvantageSection() {
             </span>
             <div className="w-8 h-[2px] bg-amber-500" />
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-brand-text uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-text uppercase">
             Why Industry Leaders Choose Us
           </h2>
         </div>
@@ -64,10 +64,10 @@ export default function AdvantageSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white rounded-3xl p-8 shadow-sm border border-brand-border/30 hover:shadow-xl transition-shadow duration-300 group"
+              className="bg-white rounded-2xl p-8 shadow-sm border border-brand-border/30 hover:shadow-xl transition-shadow duration-300 group"
             >
-              <div className="w-16 h-16 bg-brand-bg-alt rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <adv.icon className="w-8 h-8 text-amber-500" strokeWidth={1.5} />
+              <div className="w-14 h-14 bg-brand-bg-alt rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                <adv.icon className="w-6 h-6 text-amber-500" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-bold text-brand-text mb-3">
                 {adv.title}

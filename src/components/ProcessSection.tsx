@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Pickaxe, Zap, Factory, Filter, ShieldCheck, Truck, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const processes = [
   { id: "01", title: "Mining", description: "Precision extraction", icon: Pickaxe },
@@ -14,7 +15,7 @@ const processes = [
 
 export default function ProcessSection() {
   return (
-    <section className="py-24 bg-brand-bg relative overflow-hidden">
+    <section className="py-20 bg-brand-bg relative overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         
         {/* Section Header */}
@@ -26,7 +27,7 @@ export default function ProcessSection() {
             </span>
             <div className="w-8 h-[2px] bg-amber-500" />
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brand-text uppercase mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-text uppercase mb-6">
             From Earth to Infrastructure
           </h2>
         </div>
@@ -61,7 +62,7 @@ export default function ProcessSection() {
                   </div>
                 )}
                 
-                <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-white border-4 border-brand-bg flex flex-col items-center justify-center shadow-xl group-hover:border-amber-500 transition-all duration-300 relative z-10 mb-6 group-hover:-translate-y-2">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white border-4 border-brand-bg flex flex-col items-center justify-center shadow-xl group-hover:border-amber-500 transition-all duration-300 relative z-10 mb-6 group-hover:-translate-y-2">
                   <process.icon className="w-8 h-8 sm:w-10 sm:h-10 text-brand-text mb-1 group-hover:text-amber-500 transition-colors" strokeWidth={1.5} />
                   <span className="text-amber-500 font-bold text-xs">{process.id}</span>
                 </div>
@@ -75,6 +76,17 @@ export default function ProcessSection() {
               </motion.div>
             ))}
           </div>
+        </div>
+
+        {/* View Details Button */}
+        <div className="mt-16 flex justify-center relative z-10">
+          <Link
+            href="/quality"
+            className="flex items-center gap-2 bg-brand-text hover:bg-black text-white px-8 py-3.5 rounded-xl text-sm font-bold tracking-wide transition-all shadow-xl hover:-translate-y-1"
+          >
+            View Full Detailed Procedure
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
 
       </div>

@@ -115,7 +115,7 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
                   className="w-full bg-brand-bg-alt/50 border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-text transition-colors" 
-                  placeholder="John Doe" 
+                  placeholder="Rahul Sharma" 
                 />
               </div>
 
@@ -128,7 +128,7 @@ export default function ContactForm() {
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     className="w-full bg-brand-bg-alt/50 border border-brand-border rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-text transition-colors" 
-                    placeholder="john@company.com" 
+                    placeholder="rahul@company.com" 
                   />
                 </div>
                 
@@ -198,17 +198,49 @@ export default function ContactForm() {
 
         </div>
         
-        {/* Map Embed */}
-        <div className="w-full h-[400px] rounded-[32px] overflow-hidden shadow-lg border border-brand-border/30">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d118228.84711690074!2d83.8443586!3d21.8496979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20e2ef64db0c3f%3A0xc48c1eeb6b36a536!2sJharsuguda%2C%20Odisha!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-            width="100%" 
-            height="100%" 
-            style={{ border: 0 }} 
-            allowFullScreen={true} 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        {/* Maps Section */}
+        <div className="mt-12">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-8 h-[2px] bg-amber-500" />
+            <span className="text-amber-500 font-bold tracking-[0.2em] uppercase text-sm">
+              Our Locations
+            </span>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Registered Office Map */}
+            <div className="flex flex-col gap-3">
+              <h4 className="font-bold text-brand-text text-sm uppercase tracking-wider">Registered Office</h4>
+              <div className="w-full h-[250px] rounded-2xl overflow-hidden shadow-md border border-brand-border/30">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d118228.84711690074!2d83.8443586!3d21.8496979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20e2ef64db0c3f%3A0xc48c1eeb6b36a536!2sJharsuguda%2C%20Odisha!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                  width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            {/* Corporate Office Map */}
+            <div className="flex flex-col gap-3">
+              <h4 className="font-bold text-brand-text text-sm uppercase tracking-wider">Corporate Office</h4>
+              <div className="w-full h-[250px] rounded-2xl overflow-hidden shadow-md border border-brand-border/30">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d117925.21689725832!2d88.2649509!3d22.5355649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027727192c7d99%3A0x6b29d67ba5fc7aa8!2sBangur%20Avenue%2C%20Kolkata!5e0!3m2!1sen!2sin!4v1700000000001!5m2!1sen!2sin" 
+                  width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            {/* Production Unit Map */}
+            <div className="flex flex-col gap-3">
+              <h4 className="font-bold text-brand-text text-sm uppercase tracking-wider">Production Unit</h4>
+              <div className="w-full h-[250px] rounded-2xl overflow-hidden shadow-md border border-brand-border/30">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d118228.84711690074!2d83.8443586!3d21.8496979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20e2ef64db0c3f%3A0xc48c1eeb6b36a536!2sJharsuguda%2C%20Odisha!5e0!3m2!1sen!2sin!4v1700000000002!5m2!1sen!2sin" 
+                  width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </div>
         
       </div>

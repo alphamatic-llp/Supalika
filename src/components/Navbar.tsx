@@ -47,7 +47,7 @@ export default function Navbar() {
             alt="Supalika Stone Works Logo" 
             width={320} 
             height={96} 
-            className="h-16 md:h-20 w-auto object-contain" 
+            className="h-20 md:h-24 w-auto object-contain" 
             priority
           />
         </Link>

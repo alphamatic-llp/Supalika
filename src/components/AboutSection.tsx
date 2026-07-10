@@ -26,11 +26,11 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="relative h-[500px] md:h-[600px] rounded-[40px] overflow-hidden flex flex-col justify-end p-8 shadow-2xl"
+            className="relative h-[500px] md:h-[600px] rounded-2xl overflow-hidden flex flex-col justify-end p-8 shadow-2xl"
           >
             <Image
-              src="/images/quality_inspection.png"
-              alt="Quarry Operations and Crushing Plant"
+              src="/images/about_worker_v2.png"
+              alt="Indian Male Worker at Quarry"
               fill
               className="object-cover"
             />
@@ -51,7 +51,7 @@ export default function AboutSection() {
               </span>
             </div>
             
-            <h2 className="text-3xl md:text-5xl font-bold text-brand-text uppercase tracking-tight mb-6 leading-[1.1]">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-text uppercase tracking-tight mb-6 leading-[1.2]">
               Building Strong Foundations with Premium Stone Aggregates
             </h2>
             
@@ -70,7 +70,7 @@ export default function AboutSection() {
             
             <Link
               href="/about"
-              className="flex items-center gap-2 bg-brand-text hover:bg-black text-white px-8 py-4 rounded-[16px] text-sm font-semibold transition-all w-fit shadow-lg"
+              className="flex items-center gap-2 bg-brand-text hover:bg-black text-white px-6 py-3 rounded-xl text-sm font-semibold transition-all w-fit shadow-lg"
             >
               Learn More
               <ArrowRight className="w-4 h-4" />

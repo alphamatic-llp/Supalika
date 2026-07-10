@@ -1,5 +1,4 @@
 import PageHeader from "@/components/PageHeader";
-import ProcessSection from "@/components/ProcessSection";
 import Image from "next/image";
 import { ShieldCheck, Target, Factory, FlaskConical, Leaf, CheckCircle2, ClipboardCheck, Mountain, Zap, Hammer, Truck, Droplets, Scale, ArrowDownToLine, Magnet, Box, ArrowRight, Settings2, Filter, CheckCircle, HardHat } from "lucide-react";
 
@@ -11,8 +10,8 @@ export const metadata = {
 const qualityStandards = [
   {
     icon: ShieldCheck,
-    title: "ISO 9001:2015 Operations",
-    description: "Fully certified quality management systems ensuring consistent aggregate production.",
+    title: "Stringent Quality Control",
+    description: "Every batch undergoes rigorous multi-stage inspections to ensure unmatched structural integrity.",
   },
   {
     icon: Factory,
@@ -26,8 +25,8 @@ const qualityStandards = [
   },
   {
     icon: FlaskConical,
-    title: "On-site Quality Lab",
-    description: "Dedicated testing facility at the quarry for immediate batch verification.",
+    title: "Third-Party Lab Verification",
+    description: "All aggregates are regularly tested and certified by independent, accredited laboratories.",
   },
   {
     icon: Leaf,
@@ -37,24 +36,24 @@ const qualityStandards = [
 ];
 
 const processes = [
-  { id: "01", title: "Survey & Consent to Operate", icon: ClipboardCheck, image: "https://loremflickr.com/800/600/survey,engineer/all" },
-  { id: "02", title: "Overburden Removal", icon: Mountain, image: "https://loremflickr.com/800/600/excavator,dirt/all" },
-  { id: "03", title: "Drilling", icon: Target, image: "https://loremflickr.com/800/600/drilling,rock/all" },
-  { id: "04", title: "Blasting", icon: Zap, image: "https://loremflickr.com/800/600/explosion,quarry/all" },
-  { id: "05", title: "Breaking", description: "Excavator with Breaker", icon: Hammer, image: "https://loremflickr.com/800/600/hydraulic,breaker/all" },
-  { id: "06", title: "Loading of Boulders", icon: HardHat, image: "https://loremflickr.com/800/600/loader,boulder/all" },
-  { id: "07", title: "Transport to Crusher Plant", icon: Truck, image: "https://loremflickr.com/800/600/dumptruck,quarry/all" },
-  { id: "08", title: "Dewatering & Misc. Activities", icon: Droplets, image: "https://loremflickr.com/800/600/waterpump,industrial/all" },
-  { id: "09", title: "Environmental Controls", description: "Road Safety, Sprinklers, Tree Plantation, Biodiversity Management", icon: Leaf, image: "https://loremflickr.com/800/600/sprinkler,road/all" },
-  { id: "10", title: "Weighment at Weighbridge", icon: Scale, image: "https://loremflickr.com/800/600/weighbridge,truck/all" },
-  { id: "11", title: "Unload at Hopper", description: "Jaw Crusher + Grizzly Feeder", icon: ArrowDownToLine, image: "https://loremflickr.com/800/600/crusher,hopper/all" },
-  { id: "12", title: "Primary Crushing & Scalping", description: "Quarry fines removed", icon: Factory, image: "https://loremflickr.com/800/600/jaw,crusher/all" },
-  { id: "13", title: "Removal of Iron/Ferrous Objects", icon: Magnet, image: "https://loremflickr.com/800/600/magnet,industrial/all" },
-  { id: "14", title: "Surge Hopper", icon: Box, image: "https://loremflickr.com/800/600/silo,hopper/all" },
-  { id: "15", title: "Secondary Feeding", icon: ArrowRight, image: "https://loremflickr.com/800/600/conveyor,belt/all" },
-  { id: "16", title: "Cone Crusher", description: "Secondary Crushing", icon: Settings2, image: "https://loremflickr.com/800/600/cone,crusher/all" },
-  { id: "17", title: "Screening", icon: Filter, image: "https://loremflickr.com/800/600/vibrating,screen,industrial/all" },
-  { id: "18", title: "Final Products", icon: CheckCircle, image: "https://loremflickr.com/800/600/gravel,pile/all" },
+  { id: "01", title: "Survey & Consent to Operate", icon: ClipboardCheck, image: "/images/process/01-survey.png" },
+  { id: "02", title: "Overburden Removal", icon: Mountain, image: "/images/process/02-overburden.png" },
+  { id: "03", title: "Drilling", icon: Target, image: "/images/process/03-drilling.png" },
+  { id: "04", title: "Blasting", icon: Zap, image: "/images/process/04-blasting.png" },
+  { id: "05", title: "Breaking", description: "Excavator with Breaker", icon: Hammer, image: "/images/process/05-breaking.png" },
+  { id: "06", title: "Loading of Boulders", icon: HardHat, image: "/images/process/06-loading.png" },
+  { id: "07", title: "Transport to Crusher Plant", icon: Truck, image: "/images/process/07-transport.png" },
+  { id: "08", title: "Dewatering & Misc. Activities", icon: Droplets, image: "/images/process/08-dewatering.png" },
+  { id: "09", title: "Environmental Controls", description: "Road Safety, Sprinklers, Tree Plantation, Biodiversity Management", icon: Leaf, image: "/images/process/09-environmental.png" },
+  { id: "10", title: "Weighment at Weighbridge", icon: Scale, image: "/images/process/10-weighment.png" },
+  { id: "11", title: "Unload at Hopper", icon: ArrowDownToLine, image: "/images/process/11-unload.png" },
+  { id: "12", title: "Primary Crushing & Scalping", description: "Removal of Soil/Muck", icon: Factory, image: "/images/process/12-primary.png" },
+  { id: "13", title: "Removal of Iron/Ferrous Objects", description: "Via Magnetic Separator", icon: Magnet, image: "/images/process/13-iron.png" },
+  { id: "14", title: "Surge Hopper", icon: Box, image: "/images/process/14-surge.png" },
+  { id: "15", title: "Secondary Feeding", icon: ArrowRight, image: "/images/process/15-secondary.png" },
+  { id: "16", title: "Cone Crusher", description: "With Automation", icon: Settings2, image: "/images/process/16-cone.png" },
+  { id: "17", title: "Screening", icon: Filter, image: "/images/process/17-screening.png" },
+  { id: "18", title: "Final Products", icon: CheckCircle, image: "/images/process/18-final.png" },
 ];
 
 export default function QualityPage() {
@@ -68,10 +67,88 @@ export default function QualityPage() {
       
       <div className="bg-brand-bg pb-24">
         
-        {/* Short 6-step flow from Homepage */}
-        <div className="pt-12">
-          <ProcessSection />
-        </div>
+        {/* Full 18-Step Process Timeline */}
+        <section className="py-20 px-4 md:px-8 relative overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute top-0 left-0 w-1/3 h-full bg-brand-text/5 rounded-br-full -z-10 blur-3xl mix-blend-multiply opacity-50" />
+          
+          <div className="container mx-auto max-w-6xl relative z-10">
+            <div className="text-center mb-20 flex flex-col items-center">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-8 h-[2px] bg-amber-500" />
+                <span className="text-amber-500 font-bold tracking-[0.2em] uppercase text-sm">
+                  Our Manufacturing Process
+                </span>
+                <div className="w-8 h-[2px] bg-amber-500" />
+              </div>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-brand-text uppercase">
+                From Earth to Infrastructure
+              </h2>
+              <p className="text-brand-text-muted text-lg mt-6 max-w-2xl">
+                A rigorous 18-step journey ensuring that every aggregate produced meets the strictest global standards for strength and durability.
+              </p>
+            </div>
+
+            <div className="relative">
+              {/* Central Line (Desktop) */}
+              <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-brand-border/40 -translate-x-1/2" />
+              {/* Left Line (Mobile) */}
+              <div className="md:hidden absolute left-8 top-0 bottom-0 w-[2px] bg-brand-border/40" />
+
+              <div className="flex flex-col gap-12 md:gap-8">
+                {processes.map((process, idx) => {
+                  const isEven = idx % 2 !== 0;
+                  return (
+                    <div key={process.id} className={`relative flex items-center md:justify-between w-full ${isEven ? 'md:flex-row-reverse' : 'md:flex-row'} flex-col md:flex-row`}>
+                      
+                      {/* Center Icon Node */}
+                      <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-14 h-14 bg-white border-4 border-brand-bg rounded-full flex items-center justify-center shadow-xl z-10 transition-transform hover:scale-110">
+                        <process.icon className="w-6 h-6 text-amber-500" strokeWidth={2} />
+                      </div>
+
+                      {/* Card Content */}
+                      <div className={`w-full md:w-[45%] pl-20 md:pl-0 ${isEven ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'}`}>
+                        <div className={`bg-white rounded-3xl p-5 md:p-6 shadow-md border border-brand-border/20 hover:shadow-2xl hover:border-amber-500/30 transition-all duration-300 group flex flex-col sm:flex-row gap-5 md:gap-6 items-center ${isEven ? 'md:flex-row-reverse' : ''}`}>
+                          
+                          {/* Image Thumbnail */}
+                          <div className="relative w-full sm:w-32 h-48 sm:h-32 rounded-2xl overflow-hidden shrink-0">
+                            <Image 
+                              src={process.image}
+                              alt={process.title}
+                              fill
+                              className="object-cover group-hover:scale-110 transition-transform duration-700"
+                            />
+                            <div className="absolute top-2 left-2 bg-brand-text/90 backdrop-blur-sm text-white text-xs font-black px-2 py-1 rounded-lg">
+                              {process.id}
+                            </div>
+                          </div>
+
+                          {/* Text */}
+                          <div className={`flex flex-col flex-grow ${isEven ? 'md:items-end text-center sm:text-right' : 'text-center sm:text-left'}`}>
+                            <h3 className="text-xl font-bold text-brand-text mb-2 group-hover:text-amber-500 transition-colors">
+                              {process.title}
+                            </h3>
+                            {process.description ? (
+                              <p className="text-brand-text-muted text-sm leading-relaxed">
+                                {process.description}
+                              </p>
+                            ) : (
+                              <p className="text-brand-text-muted text-sm leading-relaxed">
+                                Standardized procedure ensuring optimal quality control.
+                              </p>
+                            )}
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
         
         {/* Split Section: Our Commitment */}
         <section className="py-24 px-4 md:px-8">
@@ -108,12 +185,13 @@ export default function QualityPage() {
               {/* Image */}
               <div className="relative h-[400px] md:h-[600px] w-full rounded-[40px] overflow-hidden shadow-2xl border border-brand-border/20 group">
                 <Image 
-                  src="/images/quality_inspection.png" 
+                  src="/images/quality_lab_indian.png" 
                   alt="Quality Material Inspection" 
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-1000"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f16]/60 via-transparent to-transparent opacity-60" />
+
+                <div className="absolute inset-0 bg-gradient-to-tr from-brand-bg/40 to-transparent mix-blend-multiply" />
               </div>
 
             </div>
@@ -183,79 +261,6 @@ export default function QualityPage() {
           </div>
         </section>
 
-        {/* Detailed Processes Section */}
-        <section className="py-24 px-4 md:px-8">
-          <div className="container mx-auto">
-            
-            <div className="text-center mb-16 flex flex-col items-center">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-8 h-[2px] bg-amber-500" />
-                <span className="text-amber-500 font-bold tracking-[0.2em] uppercase text-sm">
-                  Full Workflow
-                </span>
-                <div className="w-8 h-[2px] bg-amber-500" />
-              </div>
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-brand-text uppercase mb-4">
-                Step-by-Step Operations
-              </h2>
-              <p className="text-brand-text-muted text-lg max-w-2xl">
-                Every stage of our mining and crushing operation is optimized for safety, quality, and environmental compliance. Scroll horizontally to view our complete process.
-              </p>
-            </div>
-
-            {/* Horizontal Scrolling Carousel with Arrows */}
-            <div className="flex overflow-x-auto pb-12 pt-4 snap-x snap-mandatory hide-scrollbar items-stretch -mx-4 px-4 md:mx-0 md:px-0">
-              {processes.map((process, idx) => (
-                <div key={idx} className="flex items-center shrink-0 snap-center">
-                  
-                  {/* Card */}
-                  <div className="bg-white rounded-3xl overflow-hidden shadow-sm border border-brand-border/30 hover:shadow-xl transition-all duration-300 group flex flex-col w-[300px] sm:w-[350px] h-full">
-                    {/* Process Image */}
-                    <div className="relative w-full h-48 overflow-hidden bg-brand-bg-alt shrink-0">
-                      <Image 
-                        src={process.image}
-                        alt={process.title}
-                        fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div className="absolute top-4 left-4 bg-brand-bg text-brand-text font-black text-sm px-3 py-1 rounded-full shadow-md z-10 flex items-center gap-2">
-                        <process.icon className="w-4 h-4 text-amber-500" />
-                        STEP {process.id}
-                      </div>
-                    </div>
-                    
-                    {/* Process Details */}
-                    <div className="p-6 flex flex-col flex-grow">
-                      <h3 className="text-lg font-bold text-brand-text mb-2 uppercase tracking-wide leading-tight group-hover:text-amber-500 transition-colors">
-                        {process.title}
-                      </h3>
-                      {process.description && (
-                        <p className="text-brand-text-muted leading-relaxed text-sm mt-auto">
-                          {process.description}
-                        </p>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Arrow Separator (Hidden on last item) */}
-                  {idx < processes.length - 1 && (
-                    <div className="w-12 sm:w-16 flex justify-center shrink-0">
-                      <ArrowRight className="w-8 h-8 text-amber-500/50" />
-                    </div>
-                  )}
-
-                </div>
-              ))}
-            </div>
-            
-            <div className="flex justify-center mt-4">
-              <span className="text-xs text-brand-text-muted uppercase tracking-widest bg-brand-bg-alt px-4 py-2 rounded-full">
-                Scroll to explore more &rarr;
-              </span>
-            </div>
-
-          </div>
-        </section>
 
       </div>
     </>
