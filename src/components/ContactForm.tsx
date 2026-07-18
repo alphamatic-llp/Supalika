@@ -46,11 +46,11 @@ export default function ContactForm() {
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-brand-bg-alt flex items-center justify-center shrink-0 border border-brand-border">
-                  <Building className="w-5 h-5 text-brand-text" />
+                  <Factory className="w-5 h-5 text-brand-text" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-brand-text mb-1">Registered Office</h4>
-                  <p className="text-sm text-brand-text-muted">Premises No- 51/2072, Bandhabahal,<br />Tahsil-Lakhanpur, Jharsuguda, Odisha-768211</p>
+                  <h4 className="font-bold text-brand-text mb-1">Production Unit</h4>
+                  <p className="text-sm text-brand-text-muted">Chichinda, Kechobahal,<br />Dis-Jharuguda, Odisha-768216</p>
                 </div>
               </div>
 
@@ -66,11 +66,11 @@ export default function ContactForm() {
 
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-brand-bg-alt flex items-center justify-center shrink-0 border border-brand-border">
-                  <Factory className="w-5 h-5 text-brand-text" />
+                  <Building className="w-5 h-5 text-brand-text" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-brand-text mb-1">Production Unit</h4>
-                  <p className="text-sm text-brand-text-muted">Chichinda, Kechobahal,<br />Dis-Jharuguda, Odisha-768216</p>
+                  <h4 className="font-bold text-brand-text mb-1">Registered Office</h4>
+                  <p className="text-sm text-brand-text-muted">Premises No- 51/2072, Bandhabahal,<br />Tahsil-Lakhanpur, Jharsuguda, Odisha-768211</p>
                 </div>
               </div>
 
@@ -90,7 +90,7 @@ export default function ContactForm() {
                 </div>
                 <div>
                   <h4 className="font-bold text-brand-text mb-1">Email</h4>
-                  <p className="text-sm text-brand-text-muted">contact@supalikastone.com</p>
+                  <p className="text-sm text-brand-text-muted">pranat@supalika.com</p>
                 </div>
               </div>
             </div>
@@ -208,12 +208,12 @@ export default function ContactForm() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Registered Office Map */}
+            {/* Production Unit Map */}
             <div className="flex flex-col gap-3">
-              <h4 className="font-bold text-brand-text text-sm uppercase tracking-wider">Registered Office</h4>
+              <h4 className="font-bold text-brand-text text-sm uppercase tracking-wider">Production Unit</h4>
               <div className="w-full h-[250px] rounded-2xl overflow-hidden shadow-md border border-brand-border/30">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d948706.7982550613!2d82.71589279174803!3d21.745947526024228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20dfcdcf5f4001%3A0xf963891c2ee2030d!2sSAMPARKA%20BAZAR!5e0!3m2!1sen!2sin!4v1784397305181!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3701.333564207994!2d83.88770467528165!3d21.9217244799605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDU1JzE4LjIiTiA4M8KwNTMnMjUuMCJF!5e0!3m2!1sen!2sin!4v1784397707925!5m2!1sen!2sin"
                   width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
@@ -230,12 +230,12 @@ export default function ContactForm() {
               </div>
             </div>
 
-            {/* Production Unit Map */}
+            {/* Registered Office Map */}
             <div className="flex flex-col gap-3">
-              <h4 className="font-bold text-brand-text text-sm uppercase tracking-wider">Production Unit</h4>
+              <h4 className="font-bold text-brand-text text-sm uppercase tracking-wider">Registered Office</h4>
               <div className="w-full h-[250px] rounded-2xl overflow-hidden shadow-md border border-brand-border/30">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3701.333564207994!2d83.88770467528165!3d21.9217244799605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDU1JzE4LjIiTiA4M8KwNTMnMjUuMCJF!5e0!3m2!1sen!2sin!4v1784397707925!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d948706.7982550613!2d82.71589279174803!3d21.745947526024228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20dfcdcf5f4001%3A0xf963891c2ee2030d!2sSAMPARKA%20BAZAR!5e0!3m2!1sen!2sin!4v1784397305181!5m2!1sen!2sin"
                   width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>

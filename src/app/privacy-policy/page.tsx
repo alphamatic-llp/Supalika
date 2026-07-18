@@ -74,7 +74,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <div className="bg-brand-bg p-6 rounded-xl border border-brand-border/30">
                 <p className="font-bold text-brand-text mb-2">Supalika Stone Works</p>
-                <p>Email: <a href="mailto:info@supalikastone.com" className="text-amber-600 hover:underline">info@supalikastone.com</a></p>
+                <p>Email: <a href="mailto:pranat@supalika.com" className="text-amber-600 hover:underline">pranat@supalika.com</a></p>
                 <p>Phone: +91 98042 70501</p>
                 <p className="mt-4 text-sm">
                   Corporate Office: Room 2C, Bajaj Kunj, 118-Bangur Avenue, Block-C, Kolkata-700055

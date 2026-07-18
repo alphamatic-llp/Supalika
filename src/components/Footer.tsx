@@ -66,8 +66,8 @@ export default function Footer() {
             <h4 className="font-bold text-sm tracking-widest uppercase mb-2">Contact Us</h4>
 
             <div className="flex flex-col gap-1">
-              <span className="text-xs font-bold text-brand-text">Registered Office:</span>
-              <p className="text-xs text-brand-text-muted leading-tight">Premises No- 51/2072, Bandhabahal, Tahsil-Lakhanpur, Jharsuguda, Odisha-768211</p>
+              <span className="text-xs font-bold text-brand-text">Production Unit:</span>
+              <p className="text-xs text-brand-text-muted leading-tight">Chichinda, Kechobahal, Dis-Jharuguda, Odisha-768216</p>
             </div>
 
             <div className="flex flex-col gap-1">
@@ -76,8 +76,8 @@ export default function Footer() {
             </div>
 
             <div className="flex flex-col gap-1">
-              <span className="text-xs font-bold text-brand-text">Production Unit:</span>
-              <p className="text-xs text-brand-text-muted leading-tight">Chichinda, Kechobahal, Dis-Jharuguda, Odisha-768216</p>
+              <span className="text-xs font-bold text-brand-text">Registered Office:</span>
+              <p className="text-xs text-brand-text-muted leading-tight">Premises No- 51/2072, Bandhabahal, Tahsil-Lakhanpur, Jharsuguda, Odisha-768211</p>
             </div>
 
             <div className="mt-2">
@@ -85,7 +85,7 @@ export default function Footer() {
                 +91 98042 70501
               </p>
               <p className="text-sm text-brand-text-muted">
-                info@supalikastone.com
+                pranat@supalika.com
               </p>
             </div>
 

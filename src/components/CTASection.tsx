@@ -54,7 +54,7 @@ export default function CTASection() {
               </a>
 
               <a
-                href="mailto:info@supalikastone.com"
+                href="mailto:pranat@supalika.com"
                 className="flex items-center justify-center gap-2 bg-transparent hover:bg-white/10 text-white border border-white/30 px-6 py-3 rounded-xl text-sm font-bold transition-all shadow-sm min-w-[200px]"
               >
                 <Mail className="w-4 h-4" />
