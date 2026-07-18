@@ -129,7 +129,7 @@ export default function HeroSection() {
       </div>
 
       {/* Smooth Scroll Indicator */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
@@ -137,7 +137,7 @@ export default function HeroSection() {
       >
         <span className="text-white/60 text-[10px] tracking-[0.3em] uppercase font-semibold">Scroll</span>
         <div className="w-[1px] h-12 bg-white/20 relative overflow-hidden">
-          <motion.div 
+          <motion.div
             animate={{ y: [0, 48, 48] }}
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
             className="absolute top-0 left-0 w-full h-1/2 bg-white"

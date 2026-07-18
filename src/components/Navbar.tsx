@@ -34,20 +34,19 @@ export default function Navbar() {
   return (
     <header className="fixed top-6 left-0 right-0 z-50 px-4 lg:px-20">
       <div
-        className={`w-full transition-all duration-300 rounded-[32px] px-6 py-4 flex items-center justify-between ${
-          isScrolled 
-            ? "bg-white/90 backdrop-blur-xl shadow-lg border border-white/50" 
+        className={`w-full transition-all duration-300 rounded-[32px] px-6 py-4 flex items-center justify-between ${isScrolled
+            ? "bg-white/90 backdrop-blur-xl shadow-lg border border-white/50"
             : "bg-white/80 backdrop-blur-xl shadow-sm border border-white/50"
-        }`}
+          }`}
       >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2" style={{ mixBlendMode: 'darken' }}>
-          <Image 
-            src="/images/logo.png" 
-            alt="Supalika Stone Works Logo" 
-            width={320} 
-            height={96} 
-            className="h-20 md:h-24 w-auto object-contain" 
+          <Image
+            src="/images/logo.png"
+            alt="Supalika Stone Works Logo"
+            width={320}
+            height={96}
+            className="h-20 md:h-24 w-auto object-contain"
             priority
           />
         </Link>
@@ -60,15 +59,14 @@ export default function Navbar() {
               <Link
                 key={idx}
                 href={link.href}
-                className={`text-sm font-semibold transition-colors relative group ${
-                  isActive ? "text-brand-text" : "text-brand-text-muted hover:text-brand-text"
-                }`}
+                className={`text-sm font-semibold transition-colors relative group ${isActive ? "text-brand-text" : "text-brand-text-muted hover:text-brand-text"
+                  }`}
               >
                 {link.name}
                 {isActive && (
-                  <motion.span 
+                  <motion.span
                     layoutId="navbar-indicator"
-                    className="absolute -bottom-2 left-0 right-0 h-[2px] bg-brand-text rounded-full" 
+                    className="absolute -bottom-2 left-0 right-0 h-[2px] bg-brand-text rounded-full"
                   />
                 )}
               </Link>
@@ -111,9 +109,8 @@ export default function Navbar() {
                 <Link
                   key={idx}
                   href={link.href}
-                  className={`text-lg font-medium transition-colors ${
-                    isActive ? "text-brand-text font-bold" : "text-brand-text-muted"
-                  }`}
+                  className={`text-lg font-medium transition-colors ${isActive ? "text-brand-text font-bold" : "text-brand-text-muted"
+                    }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}

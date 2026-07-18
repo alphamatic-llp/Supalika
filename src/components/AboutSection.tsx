@@ -19,7 +19,7 @@ export default function AboutSection() {
     <section id="about" className="py-20 px-4 md:px-8">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-          
+
           {/* Left: Image */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -29,7 +29,7 @@ export default function AboutSection() {
             className="relative h-[500px] md:h-[600px] rounded-2xl overflow-hidden flex flex-col justify-end p-8 shadow-2xl"
           >
             <Image
-              src="/images/about_worker_v2.png"
+              src="/images/about_worker_v3.png"
               alt="Indian Male Worker at Quarry"
               fill
               className="object-cover"
@@ -50,11 +50,11 @@ export default function AboutSection() {
                 About Supalika Stone
               </span>
             </div>
-            
+
             <h2 className="text-3xl md:text-4xl font-bold text-brand-text uppercase tracking-tight mb-6 leading-[1.2]">
               Building Strong Foundations with Premium Stone Aggregates
             </h2>
-            
+
             <p className="text-brand-text-muted text-lg mb-8 leading-relaxed">
               We are a professional aggregate manufacturing company dedicated to delivering premium quality materials across Eastern India. With integrated crushing systems, reliable logistics, and a commitment to sustainable operations, we serve the nation's most demanding infrastructure projects.
             </p>
@@ -67,7 +67,7 @@ export default function AboutSection() {
                 </div>
               ))}
             </div>
-            
+
             <Link
               href="/about"
               className="flex items-center gap-2 bg-brand-text hover:bg-black text-white px-6 py-3 rounded-xl text-sm font-semibold transition-all w-fit shadow-lg"

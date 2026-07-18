@@ -24,7 +24,7 @@ export const productsData = [
     image: "/images/products/prod_02_blasted_boulders.png",
     icon: Mountain
   },
-  
+
   // CRUSHER AGGREGATES
   {
     id: 3,
@@ -45,7 +45,7 @@ export const productsData = [
     description: "Precisely graded stone ballast meeting Indian Railway specifications for track bedding.",
     fullDescription: "Our premium 40-60MM railway ballast is strictly graded to meet the most rigorous Indian Railway specifications. Designed for maximum interlocking and rapid drainage, it provides an ultra-stable bed for heavy freight and high-speed mainline tracks.",
     applications: ["Railway track bedding", "High-speed rail lines", "Heavy freight corridors", "Drainage layers"],
-    image: "/images/products/prod_04_railway_ballast_real.jpg",
+    image: "/images/products/prod_04_railway_ballast_real.png",
     icon: Hexagon
   },
   {
@@ -56,7 +56,7 @@ export const productsData = [
     description: "60MM crushed stone aggregate for heavy infrastructure and deep foundations.",
     fullDescription: "60MM crushed stone aggregate designed for major road construction and deep structural foundations. Engineered for high load-bearing requirements.",
     applications: ["Deep foundations", "Heavy infrastructure", "Commercial building", "Drainage systems"],
-    image: "/images/products/prod_05_60mm_real.jpg",
+    image: "/images/products/60-mm-stone.png",
     icon: Box
   },
   {
@@ -67,7 +67,7 @@ export const productsData = [
     description: "40MM multi-grade crushed stone aggregate for concrete production and foundations.",
     fullDescription: "40MM multi-grade crushed stone aggregate designed for high-strength concrete production, major road construction, and deep structural foundations. We offer precision sizes to suit exact engineering requirements.",
     applications: ["Concrete production", "Road construction", "Structural foundations", "Commercial building"],
-    image: "/images/products/prod_06_40mm_real.jpg",
+    image: "/images/products/40-mm-stone.png",
     icon: Box
   },
   {
@@ -78,7 +78,7 @@ export const productsData = [
     description: "Custom-engineered 40-60MM aggregate blends for heavy-load industrial infrastructure.",
     fullDescription: "Custom-engineered 40-60MM aggregate blends formulated specifically for mega-projects. Tested to endure immense stress, this aggregate is trusted for heavy-load industrial infrastructure requiring strict compliance.",
     applications: ["Airport runways", "National highways", "Heavy industrial parks", "Bridge abutments"],
-    image: "/images/products/prod_07_40_60mm_real.jpg",
+    image: "/images/products/40-60MM.png",
     icon: Droplets
   },
   {
@@ -89,7 +89,7 @@ export const productsData = [
     description: "30-40MM aggregate for general construction and structural concrete applications.",
     fullDescription: "High-quality 30-40MM aggregate providing excellent strength and durability for various construction needs, including residential and commercial structural concrete applications.",
     applications: ["Structural concrete", "General construction", "Paving", "Base materials"],
-    image: "/images/products/prod_08_30_40mm_real.jpg",
+    image: "/images/products/30-40MM.png",
     icon: Box
   },
   {
@@ -100,7 +100,7 @@ export const productsData = [
     description: "Precision 30MM crushed stone aggregate for specialized concrete and road sub-base.",
     fullDescription: "Precision 30MM crushed stone aggregate. It offers the perfect balance of interlocking capabilities and strength, making it ideal for specialized concrete mixtures and robust road sub-bases.",
     applications: ["Specialized concrete", "Road sub-base", "Drainage", "Commercial foundations"],
-    image: "/images/products/prod_09_30mm_real.jpg",
+    image: "/images/products/30MM.png",
     icon: Box
   },
   {
@@ -111,7 +111,7 @@ export const productsData = [
     description: "Standard 20MM crushed stone aggregate, widely used for RCC (Reinforced Cement Concrete).",
     fullDescription: "The industry standard 20MM crushed stone aggregate. It is the primary choice for RCC (Reinforced Cement Concrete) in residential and commercial buildings, ensuring maximum strength and longevity.",
     applications: ["RCC (Reinforced Cement Concrete)", "Slab construction", "Pillars and beams", "General building"],
-    image: "/images/products/prod_10_20mm_real.jpg",
+    image: "/images/products/20MM.png",
     icon: Box
   },
   {
@@ -122,7 +122,7 @@ export const productsData = [
     description: "10MM fine crushed stone aggregate for specialized concrete mixtures and finishing work.",
     fullDescription: "10MM fine crushed stone aggregate. Crucial for filling voids in larger aggregate mixtures to achieve maximum density and strength in concrete, as well as for finer finishing work.",
     applications: ["Concrete void filling", "Roofing", "Asphalt mixing", "Pre-cast concrete products"],
-    image: "/images/products/prod_11_10mm_real.jpg",
+    image: "/images/products/10MM.png",
     icon: Box
   },
   {
@@ -133,7 +133,7 @@ export const productsData = [
     description: "6MM aggregate chips for block manufacturing and delicate construction applications.",
     fullDescription: "6MM aggregate chips designed for specialized applications including solid and hollow block manufacturing, decorative pathways, and highly specific concrete formulations.",
     applications: ["Block manufacturing", "Decorative pathways", "Specialized concrete", "Asphalt surface course"],
-    image: "/images/products/prod_12_6mm_real.jpg",
+    image: "/images/products/6MM.png",
     icon: Box
   },
   {
@@ -144,7 +144,7 @@ export const productsData = [
     description: "Manufactured fine stone dust for use in brick production, plastering, and controlled fill.",
     fullDescription: "Manufactured fine stone dust designed as a superior alternative to river sand. Ideal for use in premium brick production, smooth plastering, and as a highly compactable controlled fill material for foundation and trenching operations.",
     applications: ["Brick production", "Plastering", "Trench filling", "Paver block manufacturing"],
-    image: "/images/products/prod_13_dust_real.jpg",
+    image: "/images/products/Stone Dust (Fine).png",
     icon: Sun
   },
 

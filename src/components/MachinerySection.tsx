@@ -7,17 +7,17 @@ const machinery = [
   {
     name: "Jaw Crusher",
     description: "Primary crushing for large boulders and oversize materials.",
-    image: "/images/machinery/jaw_crusher.png",
+    image: "/images/machinery/jaw_crusher_supalika.png",
   },
   {
     name: "Cone Crusher",
     description: "Secondary and tertiary crushing for precise aggregate shaping.",
-    image: "/images/machinery/cone_crusher.png",
+    image: "/images/machinery/cone_crusher_supalika.png",
   },
   {
     name: "Excavator",
     description: "Heavy-duty extraction and loading at the quarry face.",
-    image: "/images/machinery/excavator.png",
+    image: "/images/machinery/excavator_supalika.png",
   },
   {
     name: "Wheel Loader",
