@@ -213,7 +213,7 @@ export default function ContactForm() {
               <h4 className="font-bold text-brand-text text-sm uppercase tracking-wider">Registered Office</h4>
               <div className="w-full h-[250px] rounded-2xl overflow-hidden shadow-md border border-brand-border/30">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d118228.84711690074!2d83.8443586!3d21.8496979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20e2ef64db0c3f%3A0xc48c1eeb6b36a536!2sJharsuguda%2C%20Odisha!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d948706.7982550613!2d82.71589279174803!3d21.745947526024228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20dfcdcf5f4001%3A0xf963891c2ee2030d!2sSAMPARKA%20BAZAR!5e0!3m2!1sen!2sin!4v1784397305181!5m2!1sen!2sin"
                   width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
@@ -235,7 +235,7 @@ export default function ContactForm() {
               <h4 className="font-bold text-brand-text text-sm uppercase tracking-wider">Production Unit</h4>
               <div className="w-full h-[250px] rounded-2xl overflow-hidden shadow-md border border-brand-border/30">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d118228.84711690074!2d83.8443586!3d21.8496979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20e2ef64db0c3f%3A0xc48c1eeb6b36a536!2sJharsuguda%2C%20Odisha!5e0!3m2!1sen!2sin!4v1700000000002!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3701.333564207994!2d83.88770467528165!3d21.9217244799605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDU1JzE4LjIiTiA4M8KwNTMnMjUuMCJF!5e0!3m2!1sen!2sin!4v1784397707925!5m2!1sen!2sin"
                   width="100%" height="100%" style={{ border: 0 }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
