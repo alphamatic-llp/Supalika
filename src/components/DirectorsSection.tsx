@@ -23,7 +23,7 @@ export default function DirectorsSection() {
           <div className="bg-white rounded-[40px] overflow-hidden shadow-xl border border-brand-border/20 group hover:shadow-2xl transition-all duration-300 flex flex-col">
             <div className="relative h-[450px] md:h-[500px] w-full overflow-hidden">
               <Image 
-                src="https://loremflickr.com/600/800/portrait,man,suit/all" 
+                src="/images/director_1.png" 
                 alt="Sanjay Kumar Pradhan" 
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -53,7 +53,7 @@ export default function DirectorsSection() {
           <div className="bg-white rounded-[40px] overflow-hidden shadow-xl border border-brand-border/20 group hover:shadow-2xl transition-all duration-300 flex flex-col">
             <div className="relative h-[450px] md:h-[500px] w-full overflow-hidden">
               <Image 
-                src="https://loremflickr.com/600/801/portrait,man,suit/all" 
+                src="/images/pranat_bajaj.jpg" 
                 alt="Pranat Bajaj" 
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"

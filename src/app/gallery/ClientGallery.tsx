@@ -32,11 +32,18 @@ const allImages: GalleryItem[] = [
   { id: 12, src: "/images/industrial_estates.png", category: "Infrastructure", title: "Industrial Estates" },
 
   // Operations
-  { id: 13, src: "/images/hero-bg.png", category: "Operations", title: "Quarry Extraction" },
-  { id: 14, src: "/images/hero-bg1.png", category: "Operations", title: "Processing Plant" },
-  { id: 15, src: "/images/about_legacy.png", category: "Operations", title: "Advanced Crushing" },
-  { id: 16, src: "/images/hero-bg2.png", category: "Operations", title: "Logistics & Dispatch" },
-  { id: 17, src: "/images/product-crusher.png", category: "Operations", title: "Crusher Machinery" },
+  { id: 13, src: "/images/plant_sunset.jpg", category: "Operations", title: "Crushing Plant at Sunset" },
+  { id: 14, src: "/images/crusher_worker.jpg", category: "Operations", title: "Crusher Operations" },
+  { id: 15, src: "/images/cone_crusher_real.jpg", category: "Operations", title: "Cone Crusher" },
+  { id: 16, src: "/images/control_room.jpg", category: "Operations", title: "Control Room" },
+  { id: 17, src: "/images/conveyor_belts.jpg", category: "Operations", title: "Conveyor System" },
+  { id: 18, src: "/images/jaw_crusher_real.jpg", category: "Operations", title: "Jaw Crusher" },
+  { id: 19, src: "/images/cone_crusher_closeup.jpg", category: "Operations", title: "MH220 Cone Crusher" },
+  { id: 20, src: "/images/conveyor_dust.jpg", category: "Operations", title: "Aggregate Processing" },
+  { id: 21, src: "/images/plant_building.jpg", category: "Operations", title: "Plant Building" },
+  { id: 22, src: "/images/plant_sunset_wide.jpg", category: "Operations", title: "Plant Panorama" },
+  { id: 23, src: "/images/quality_check_outdoor.jpg", category: "Operations", title: "Quality Inspection" },
+  { id: 24, src: "/images/stone_in_hands.jpg", category: "Operations", title: "Premium Aggregates" },
 ];
 
 export default function ClientGallery() {

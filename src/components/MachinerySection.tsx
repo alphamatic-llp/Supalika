@@ -7,32 +7,32 @@ const machinery = [
   {
     name: "Jaw Crusher",
     description: "Primary crushing for large boulders and oversize materials.",
-    image: "/images/machinery/jaw_crusher.png",
+    image: "/images/jaw_crusher_real.jpg",
   },
   {
     name: "Cone Crusher",
     description: "Secondary and tertiary crushing for precise aggregate shaping.",
-    image: "/images/machinery/cone_crusher.png",
+    image: "/images/cone_crusher_closeup.jpg",
   },
   {
-    name: "Excavator",
-    description: "Heavy-duty extraction and loading at the quarry face.",
-    image: "/images/machinery/excavator.png",
+    name: "Crusher Plant",
+    description: "Multi-stage automated crushing and processing facility.",
+    image: "/images/crusher_worker.jpg",
   },
   {
-    name: "Wheel Loader",
-    description: "Efficient loading and stockpiling of finished materials.",
-    image: "/images/machinery/wheel_loader.png",
-  },
-  {
-    name: "Dump Truck",
-    description: "High-capacity transport from quarry to crushing plant.",
-    image: "/images/machinery/dump_truck.png",
+    name: "Conveyor System",
+    description: "High-capacity belt conveyors for material transport and sorting.",
+    image: "/images/conveyor_belts.jpg",
   },
   {
     name: "Screening Plant",
     description: "Multi-deck vibrating screens for accurate product grading.",
-    image: "/images/machinery/screening_plant.png",
+    image: "/images/conveyor_dust.jpg",
+  },
+  {
+    name: "Control Room",
+    description: "Centralized monitoring and operations control center.",
+    image: "/images/control_room.jpg",
   },
 ];
 

@@ -29,8 +29,8 @@ export default function AboutSection() {
             className="relative h-[500px] md:h-[600px] rounded-2xl overflow-hidden flex flex-col justify-end p-8 shadow-2xl"
           >
             <Image
-              src="/images/about_worker_v2.png"
-              alt="Indian Male Worker at Quarry"
+              src="/images/control_room.jpg"
+              alt="Supalika Workers at Control Room"
               fill
               className="object-cover"
             />

@@ -29,8 +29,8 @@ export default function QualityAssuranceSection() {
             className="relative h-[450px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="/images/quality_lab_indian.png"
-              alt="Quality Assurance and Testing"
+              src="/images/quality_check_outdoor.jpg"
+              alt="Quality Inspection at Supalika"
               fill
               className="object-cover"
             />

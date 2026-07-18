@@ -45,7 +45,7 @@ export default function InfrastructurePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="relative h-[400px] md:h-[500px] rounded-[40px] overflow-hidden shadow-2xl">
                 <Image 
-                  src="/images/infra_quarry.png"
+                  src="/images/cone_crusher_real.jpg"
                   alt="Quarry Operations"
                   fill
                   className="object-cover"
@@ -85,7 +85,7 @@ export default function InfrastructurePage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center flex-col-reverse lg:flex-row-reverse">
               <div className="relative h-[400px] md:h-[500px] rounded-[40px] overflow-hidden shadow-2xl">
                 <Image 
-                  src="/images/infra_plant.png"
+                  src="/images/crusher_worker.jpg"
                   alt="Crushing Plant"
                   fill
                   className="object-cover"
@@ -128,7 +128,7 @@ export default function InfrastructurePage() {
         <section className="py-24 px-4 md:px-8">
           <div className="container mx-auto bg-brand-text rounded-[40px] p-10 md:p-16 shadow-2xl relative overflow-hidden">
             <div className="absolute inset-0 opacity-10">
-              <Image src="/images/hero-bg2.png" alt="Texture" fill className="object-cover" />
+              <Image src="/images/plant_sunset_wide.jpg" alt="Texture" fill className="object-cover" />
             </div>
             
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -162,7 +162,7 @@ export default function InfrastructurePage() {
               
               <div className="relative h-[300px] md:h-[400px] rounded-[32px] overflow-hidden border border-white/20">
                 <Image 
-                  src="/images/infra_logistics.png"
+                  src="/images/plant_building.jpg"
                   alt="Weighbridge and Logistics"
                   fill
                   className="object-cover"
