@@ -67,7 +67,7 @@ export default function AboutPage() {
           {/* Core Values */}
           <div className="bg-brand-text rounded-[40px] p-10 md:p-16 shadow-2xl relative overflow-hidden">
             <div className="absolute inset-0 opacity-10">
-              <Image src="/images/plant_sunset_wide.jpg" alt="Texture" fill className="object-cover" />
+              <Image src="/images/hero-bg.png" alt="Texture" fill className="object-cover" />
             </div>
             <div className="relative z-10">
               <div className="flex items-center gap-4 mb-8">

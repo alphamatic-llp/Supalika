@@ -19,7 +19,7 @@ export default function CTASection() {
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <Image
-              src="/images/conveyor_belts.jpg"
+              src="/images/hero-bg2.png"
               alt="Background pattern"
               fill
               className="object-cover"

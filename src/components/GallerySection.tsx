@@ -6,13 +6,13 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const galleryImages = [
-  { id: 1, src: "/images/plant_sunset.jpg", alt: "Crushing Plant at Sunset", span: "md:col-span-2 md:row-span-2" },
-  { id: 2, src: "/images/stone_in_hands.jpg", alt: "Premium Aggregates", span: "md:col-span-1 md:row-span-1" },
-  { id: 3, src: "/images/conveyor_dust.jpg", alt: "Conveyor Operations", span: "md:col-span-1 md:row-span-2" },
-  { id: 4, src: "/images/plant_building.jpg", alt: "Plant Building", span: "md:col-span-1 md:row-span-1" },
-  { id: 5, src: "/images/jaw_crusher_real.jpg", alt: "Jaw Crusher", span: "md:col-span-1 md:row-span-1" },
-  { id: 6, src: "/images/plant_sunset_wide.jpg", alt: "Plant Overview", span: "md:col-span-2 md:row-span-1" },
-  { id: 7, src: "/images/quality_check_outdoor.jpg", alt: "Quality Check", span: "md:col-span-1 md:row-span-1" },
+  { id: 1, src: "/images/gallery/crusher_plant.png", alt: "Crusher Plant", span: "md:col-span-2 md:row-span-2" },
+  { id: 2, src: "/images/gallery/stone_yard.png", alt: "Stone Yard", span: "md:col-span-1 md:row-span-1" },
+  { id: 3, src: "/images/gallery/mining_area.png", alt: "Mining Area", span: "md:col-span-1 md:row-span-2" },
+  { id: 4, src: "/images/gallery/loading_area.png", alt: "Loading", span: "md:col-span-1 md:row-span-1" },
+  { id: 5, src: "/images/gallery/dispatch_area.png", alt: "Dispatch", span: "md:col-span-1 md:row-span-1" },
+  { id: 6, src: "/images/gallery/heavy_machinery.png", alt: "Heavy Machinery", span: "md:col-span-2 md:row-span-1" },
+  { id: 7, src: "/images/gallery/operations_manager.png", alt: "Operations", span: "md:col-span-1 md:row-span-1" },
 ];
 
 export default function GallerySection() {

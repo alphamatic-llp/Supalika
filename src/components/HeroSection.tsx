@@ -11,7 +11,7 @@ export default function HeroSection() {
       {/* Background Image full width */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/plant_sunset.jpg"
+          src="/images/hero-bg2.png"
           alt="Quarry Operations"
           fill
           priority

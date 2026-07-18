@@ -185,7 +185,7 @@ export default function QualityPage() {
               {/* Image */}
               <div className="relative h-[400px] md:h-[600px] w-full rounded-[40px] overflow-hidden shadow-2xl border border-brand-border/20 group">
                 <Image 
-                  src="/images/quality_check_outdoor.jpg" 
+                  src="/images/quality_lab_indian.png" 
                   alt="Quality Material Inspection" 
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -203,7 +203,7 @@ export default function QualityPage() {
           <div className="container mx-auto">
             <div className="relative w-full h-[300px] md:h-[400px] rounded-[40px] overflow-hidden shadow-2xl group flex items-center justify-center">
               <Image 
-                src="/images/stone_in_hands.jpg"
+                src="/images/quality_lab.png"
                 alt="State of the art quality laboratory"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"
